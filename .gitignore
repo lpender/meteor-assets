@@ -1,0 +1,5 @@
+node_modules/
+resources/icons/*
+resources/splashes/*
+resources/icon.png
+resources/splash.png
