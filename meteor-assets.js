@@ -5,12 +5,12 @@ var icons = [
   {name:"iphone", size: "60x60"},
   {name:"iphone_2x", size: "120x120"},
   {name: "iphone_3x", size: "180x180"},
-  {name: "ipad_landscape_2x", size: "76x76"},
-  {name: "ipad_2", size: "152x152"},
-  {name: "android_ldpi_landscape", size: "36x36"},
-  {name: "android_mdpi_landscape", size: "48x48"},
-  {name: "android_hdpi_landscape", size: "72x72"},
-  {name: "android_xhdpi_landscape", size: "96x96"}
+  {name: "ipad", size: "76x76"},
+  {name: "ipad_2x", size: "152x152"},
+  {name: "android_ldpi", size: "36x36"},
+  {name: "android_mdpi", size: "48x48"},
+  {name: "android_hdpi", size: "72x72"},
+  {name: "android_xhdpi", size: "96x96"}
 ]
 
 var splashes = [
@@ -61,7 +61,7 @@ function resize(source, target, image) {
 };
 
 function crop(source, target, image) {
-  var initialWidth;
+  var size;
   var splash = gm(source);
 
   var imageSize = getSize(image);
@@ -73,17 +73,18 @@ function crop(source, target, image) {
   if (height > width) {
     splash.resize(height, height);
 
-    initialWidth = height;
+    size = height;
   } else {
     splash.resize(width, width);
 
-    initialWidth = width;
+    size = width;
   }
 
   // calculate x offset
-  var xOffset = (initialWidth/2) - (width/2);
+  var xOffset = (size/2) - (width/2);
+  var yOffset = (size/2) - (height/2);
 
-  splash.crop(width, height, xOffset, 0)
+  splash.crop(width, height, xOffset, yOffset)
     .write(target + name + '.png', function(err) {
       if(err) {
         console.log(err);

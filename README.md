@@ -26,9 +26,9 @@ App.icons({
   "ipad": "resources/icons/ipad.png", // 76x76
   "ipad_2x": "resources/icons/ipad_2x.png", // 152x152
   'android_ldpi': "resources/icons/android_ldpi.png", // 36x36
-  'android_mdpi': "resources/icons/icon_mdpi.png", // 48x48
-  'android_hdpi': "resources/icons/icon_hdpi.png", // 72x72
-  'android_xhdpi': "resources/icons/icon_xhdpi.png" // 96x96
+  'android_mdpi': "resources/icons/android_mdpi.png", // 48x48
+  'android_hdpi': "resources/icons/android_hdpi.png", // 72x72
+  'android_xhdpi': "resources/icons/android_xhdpi.png" // 96x96
 });
 
 App.launchScreens({
@@ -37,7 +37,7 @@ App.launchScreens({
   "iphone5": "resources/splashes/iphone5.png", // 640x1136
   "iphone6": "resources/splashes/iphone6.png", // 750x1334
   "iphone6p_portrait": "resources/splashes/iphone6p_portrait.png", // 2208x1242
-  "iphone6p_landscape": "resources/splashes/iphone6p_landscape.png", 
+  "iphone6p_landscape": "resources/splashes/iphone6p_landscape.png",
   "ipad_portrait": "resources/splashes/ipad_portrait.png",
   "ipad_portrait_2x": "resources/splashes/ipad_portrait_2x.png",
   "ipad_landscape": "resources/splashes/ipad_landscape.png",
@@ -58,7 +58,7 @@ Sizes thanks to https://gist.github.com/jperl/f8c395b9f0f1056ad890
 ## Notes
 
 - This will crop splashes horizontally centered but and vertically positioned at the top.
-- This does not currently generate [9 patch](https://developer.android.com/guide/topics/graphics/2d-graphics.html#nine-patch) images for Android. 
+- This does not currently generate [9 patch](https://developer.android.com/guide/topics/graphics/2d-graphics.html#nine-patch) images for Android.
 
 ## Contributing
 
