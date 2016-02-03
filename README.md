@@ -4,7 +4,6 @@
 
 - Clone this repository.
 - Open the repository in the command line and run `npm install`
-- Create directories for `resources/`, `resources/icons/`, and `resources/splashes/` in the root of the repository.
 
 ## Usage
 

@@ -95,6 +95,16 @@ function crop(source, target, image) {
     });
 }
 
+// Run the code
+
+if(!fs.existsSync(__dirname + '/resources/icons')) {
+  fs.mkdirSync(__dirname + '/resources/icons');
+}
+
+if(!fs.existsSync(__dirname + '/resources/splashes')) {
+  fs.mkdirSync(__dirname + '/resources/splashes');
+}
+
 icons.forEach(function(icon) {
   resize('resources/icon.png', 'resources/icons/', icon);
 });
