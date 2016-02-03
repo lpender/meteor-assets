@@ -65,8 +65,8 @@ function crop(source, target, image) {
   var splash = gm(source);
 
   var imageSize = getSize(image);
-  var width = imageSize.width;
-  var height = imageSize.height;
+  var width = parseInt(imageSize.width);
+  var height = parseInt(imageSize.height);
   var name = image.name;
 
   // square up so that it cuts off as little as possible
