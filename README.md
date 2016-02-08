@@ -36,19 +36,19 @@ App.launchScreens({
   "iphone5": "resources/splashes/iphone5.png", // 640x1136
   "iphone6": "resources/splashes/iphone6.png", // 750x1334
   "iphone6p_portrait": "resources/splashes/iphone6p_portrait.png", // 2208x1242
-  "iphone6p_landscape": "resources/splashes/iphone6p_landscape.png",
-  "ipad_portrait": "resources/splashes/ipad_portrait.png",
-  "ipad_portrait_2x": "resources/splashes/ipad_portrait_2x.png",
-  "ipad_landscape": "resources/splashes/ipad_landscape.png",
-  "ipad_landscape_2x": "resources/splashes/ipad_landscape_2x.png",
-  "android_ldpi_portrait": "resources/splashes/android_ldpi_portrait.png",
-  "android_ldpi_landscape": "resources/splashes/android_ldpi_landscape.png",
-  "android_mdpi_portrait": "resources/splashes/android_mdpi_portrait.png",
-  "android_mdpi_landscape": "resources/splashes/android_mdpi_landscape.png",
-  "android_hdpi_portrait": "resources/splashes/android_hdpi_portrait.png",
-  "android_hdpi_landscape": "resources/splashes/android_hdpi_landscape.png",
-  "android_xhdpi_portrait": "resources/splashes/android_xhdpi_portrait.png",
-  "android_xhdpi_landscape": "resources/splashes/android_xhdpi_landscape.png"
+  "iphone6p_landscape": "resources/splashes/iphone6p_landscape.png", // 2208x1242
+  "ipad_portrait": "resources/splashes/ipad_portrait.png", // 768x1024
+  "ipad_portrait_2x": "resources/splashes/ipad_portrait_2x.png", // 1536x2048
+  "ipad_landscape": "resources/splashes/ipad_landscape.png", // 1024x768
+  "ipad_landscape_2x": "resources/splashes/ipad_landscape_2x.png", // 2048x1536
+  "android_ldpi_portrait": "resources/splashes/android_ldpi_portrait.png", // 200x320
+  "android_ldpi_landscape": "resources/splashes/android_ldpi_landscape.png", // 320x200
+  "android_mdpi_portrait": "resources/splashes/android_mdpi_portrait.png", // 320x480
+  "android_mdpi_landscape": "resources/splashes/android_mdpi_landscape.png", // 480x320
+  "android_hdpi_portrait": "resources/splashes/android_hdpi_portrait.png", // 480x800
+  "android_hdpi_landscape": "resources/splashes/android_hdpi_landscape.png", // 800x480
+  "android_xhdpi_portrait": "resources/splashes/android_xhdpi_portrait.png", // 720x1280
+  "android_xhdpi_landscape": "resources/splashes/android_xhdpi_landscape.png" // 1280x720
 })
 ```
 
