@@ -5,6 +5,23 @@
 - Clone this repository.
 - Open the repository in the command line and run `npm install`
 
+```
+git clone https://github.com/lpender/meteor-assets
+cd meteor-assets
+npm install
+```
+
+### Note
+
+This repository has been updated for usage with Meteor v1.3.
+
+If `meteor --version` is less than `1.3`:
+
+```
+git pull --tags
+git checkout v0.0.2
+``` 
+
 ## Usage
 
 1. Generate an icon at 1024x1024 and place it in `resources/icon.png`.
