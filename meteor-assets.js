@@ -2,19 +2,24 @@ var fs = require('fs'),
     gm = require('gm').subClass({imageMagick: true});
 
 var icons = [
-  {name:"iphone", size: "60x60"},
   {name:"iphone_2x", size: "120x120"},
   {name: "iphone_3x", size: "180x180"},
   {name: "ipad", size: "76x76"},
   {name: "ipad_2x", size: "152x152"},
-  {name: "android_ldpi", size: "36x36"},
+  {name: "ipad_pro", size: "167x167"},
+  {name: "ios_settings", size: "29x29"},
+  {name: "ios_settings_2x", size: "58x58"},
+  {name: "ios_settings_3x", size: "87x87"},
+  {name: "ios_spotlight", size: "40x40"},
+  {name: "ios_spotlight_2x", size: "80x80"},
   {name: "android_mdpi", size: "48x48"},
   {name: "android_hdpi", size: "72x72"},
-  {name: "android_xhdpi", size: "96x96"}
+  {name: "android_xhdpi", size: "96x96"},
+  {name: "android_xxhdpi", size: "144x144"},
+  {name: "android_xxxhdpi", size: "192x192"}
 ]
 
 var splashes = [
-  {"name":"iphone","size":"320x480"},
   {"name":"iphone_2x","size":"640x960"},
   {"name":"iphone5","size":"640x1136"},
   {"name":"iphone6","size":"750x1334"},
@@ -24,16 +29,16 @@ var splashes = [
   {"name":"ipad_portrait_2x","size":"1536x2048"},
   {"name":"ipad_landscape","size":"1024x768"},
   {"name":"ipad_landscape_2x","size":"2048x1536"},
-  {"name":"android_ldpi_portrait","size":"200x320"},
   {"name":"android_ldpi_landscape","size":"320x200"},
   {"name":"android_mdpi_portrait","size":"320x480"},
   {"name":"android_mdpi_landscape","size":"480x320"},
   {"name":"android_hdpi_portrait","size":"480x800"},
   {"name":"android_hdpi_landscape","size":"800x480"},
   {"name":"android_xhdpi_portrait","size":"720x1280"},
-  {"name":"android_xhdpi_landscape","size":"1280x720"}
+  {"name":"android_xhdpi_landscape","size":"1280x720"},
+  {"name":"android_xxhdpi_portrait","size":"1080x1440"},
+  {"name":"android_xxhdpi_landscape","size":"1440x1080"}
  ]
-
 
 function getSize(image) {
   var sizes = image.size.split('x');
