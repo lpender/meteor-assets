@@ -44,8 +44,8 @@ App.icons({
   "ios_settings": "resources/icons/ios_settings.png", // 29x29
   "ios_settings_2x": "resources/icons/ios_settings_2x.png", // 58x58
   "ios_settings_3x": "resources/icons/ios_settings_3x.png", // 87x87
-  "ios_spotlight": "resources/icons/ios_spotlight", // 40x40
-  "ios_spotlight_2x": "resources/icons/ios_spotlight_2x", // 80x80
+  "ios_spotlight": "resources/icons/ios_spotlight.png", // 40x40
+  "ios_spotlight_2x": "resources/icons/ios_spotlight_2x.png", // 80x80
   "android_mdpi": "resources/icons/android_mdpi.png", // 48x48
   "android_hdpi": "resources/icons/android_hdpi.png", // 72x72
   "android_xhdpi": "resources/icons/android_xhdpi.png", // 96x96
