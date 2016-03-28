@@ -85,7 +85,7 @@ function crop(source, target, image) {
     size = width;
   }
 
-  // calculate x offset
+  // calculate x and y offset
   var xOffset = (size/2) - (width/2);
   var yOffset = (size/2) - (height/2);
 

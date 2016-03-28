@@ -78,7 +78,7 @@ Sizes thanks to https://github.com/meteor/meteor/blob/release-1.3/tools/cordova/
 
 ## Notes
 
-- This will crop splashes horizontally centered but and vertically positioned at the top.
+- This will crop splashes horizontally centered and vertically centered.
 - This does not currently generate [9 patch](https://developer.android.com/guide/topics/graphics/2d-graphics.html#nine-patch) images for Android.
 
 ## Contributing
