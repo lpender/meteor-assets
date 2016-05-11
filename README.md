@@ -11,6 +11,24 @@ cd meteor-assets
 npm install
 ```
 
+## Environmental Dependencies
+
+This project requires `imagemagick`.
+
+#### Linux
+
+```
+sudo apt-get install imagemagick imagemagick-doc
+```
+
+#### Os X
+
+Install [homebrew](http://brew.sh/) and then:
+
+```
+brew install imagemagick
+```
+
 ### Note
 
 This repository has been updated for usage with Meteor v1.3.
