@@ -111,9 +111,17 @@ if(!fs.existsSync(__dirname + '/resources/splashes')) {
 }
 
 icons.forEach(function(icon) {
-  resize('resources/icon.png', 'resources/icons/', icon);
+  if (icon.name.indexOf('android') == 0) {
+    resize('resources/icon-android.png', 'resources/icons/', icon);
+  } else {
+    resize('resources/icon-ios.png', 'resources/icons/', icon);
+  }
 });
 
 splashes.forEach(function(splash) {
-  crop('resources/splash.png', 'resources/splashes/', splash);
+  if (splash.name.indexOf('android') == 0) {
+    crop('resources/splash-android.png', 'resources/splashes/', splash);
+  } else {
+    crop('resources/splash-ios.png', 'resources/splashes/', splash);
+  }
 });

@@ -38,13 +38,19 @@ If `meteor --version` is less than `1.3`:
 ```
 git pull --tags
 git checkout v0.0.2
-``` 
+```
 
 ## Usage
 
-1. Generate an icon at 1024x1024 and place it in `resources/icon.png`.
+*Note*: You can use the same icon cross platform but it's not recommended in
+some cases. See [this issue](https://github.com/lpender/meteor-assets/issues/6)
+for more details.
 
-2. Generate a splash screen at 2208x2208 and place it in `resources/splash.png`.
+1. Generate icons at 1024x1024 and place them in `resources/icon-ios.png` and
+   `resources/icon-android.png`.
+
+2. Generate splash screens at 2208x2208 and place them in
+   `resources/splash-ios.png` and `resources/splash-android.png`.
 
 3. Run `node meteor-assets`.
 
