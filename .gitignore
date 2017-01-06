@@ -1,5 +1,7 @@
 node_modules/
 resources/icons/*
 resources/splashes/*
-resources/icon.png
-resources/splash.png
+!resources/icon-android.png
+!resources/icon-ios.png
+!resources/splash-android.png
+!resources/splash-ios.png
