@@ -58,7 +58,7 @@ for more details.
 
 5. Add this to your `mobile-config.js`
 
-```
+``` javascript
 App.icons({
   "app_store": "resources/icons/app_store.png", // 1024x1024
   "iphone_2x": "resources/icons/iphone_2x.png", // 120x120
