@@ -2,6 +2,7 @@ var fs = require('fs'),
     gm = require('gm').subClass({imageMagick: true});
 
 var icons = [
+  {name:"app_store", size: "1024x1024"},
   {name:"iphone_2x", size: "120x120"},
   {name: "iphone_3x", size: "180x180"},
   {name: "ipad", size: "76x76"},
@@ -25,10 +26,12 @@ var icons = [
   {name: "android_hdpi", size: "72x72"},
   {name: "android_xhdpi", size: "96x96"},
   {name: "android_xxhdpi", size: "144x144"},
-  {name: "android_xxxhdpi", size: "192x192"}
+  {name: "android_xxxhdpi", size: "192x192"},
+  {name: "android_store", size: "512x512"}
 ]
 
 var splashes = [
+  {"name":"iphone","size":"320x480"},
   {"name":"iphone_2x","size":"640x960"},
   {"name":"iphone5","size":"640x1136"},
   {"name":"iphone6","size":"750x1334"},
@@ -46,7 +49,8 @@ var splashes = [
   {"name":"android_xhdpi_portrait","size":"720x1280"},
   {"name":"android_xhdpi_landscape","size":"1280x720"},
   {"name":"android_xxhdpi_portrait","size":"1080x1440"},
-  {"name":"android_xxhdpi_landscape","size":"1440x1080"}
+  {"name":"android_xxhdpi_landscape","size":"1440x1080"},
+  {"name":"android_featured","size":"1024x500"}
  ]
 
 function getSize(image) {
@@ -131,6 +135,6 @@ splashes.forEach(function(splash) {
   if (splash.name.indexOf('android') == 0) {
     crop('resources/splash-android.png', 'resources/splashes/', splash);
   } else {
-    crop('resources/splash-ios.png', 'resources/splashes/', splash);
+    crop('resources/splash-ios.jpg', 'resources/splashes/', splash);
   }
 });
