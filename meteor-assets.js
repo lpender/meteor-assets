@@ -2,6 +2,7 @@ var fs = require('fs'),
     gm = require('gm').subClass({imageMagick: true});
 
 var icons = [
+  {name:"app_store", size: "1024x1024"},
   {name:"iphone_2x", size: "120x120"},
   {name: "iphone_3x", size: "180x180"},
   {name: "ipad", size: "76x76"},
@@ -12,14 +13,25 @@ var icons = [
   {name: "ios_settings_3x", size: "87x87"},
   {name: "ios_spotlight", size: "40x40"},
   {name: "ios_spotlight_2x", size: "80x80"},
+  {name: "ios_notification", size: "20x20"},
+  {name: "ios_notification_2x", size: "40x40"},
+  {name: "ios_notification_3x", size: "60x60"},
+  {name: "iphone_legacy", size: "57x57"},
+  {name: "iphone_legacy_2x", size: "114x114"},
+  {name: "ipad_spotlight_legacy", size: "50x50"},
+  {name: "ipad_spotlight_legacy_2x", size: "100x100"},
+  {name: "ipad_app_legacy", size: "72x72"},
+  {name: "ipad_app_legacy_2x", size: "144x144"},
   {name: "android_mdpi", size: "48x48"},
   {name: "android_hdpi", size: "72x72"},
   {name: "android_xhdpi", size: "96x96"},
   {name: "android_xxhdpi", size: "144x144"},
-  {name: "android_xxxhdpi", size: "192x192"}
+  {name: "android_xxxhdpi", size: "192x192"},
+  {name: "android_store", size: "512x512"}
 ]
 
 var splashes = [
+  {"name":"iphone","size":"320x480"},
   {"name":"iphone_2x","size":"640x960"},
   {"name":"iphone5","size":"640x1136"},
   {"name":"iphone6","size":"750x1334"},
@@ -37,7 +49,8 @@ var splashes = [
   {"name":"android_xhdpi_portrait","size":"720x1280"},
   {"name":"android_xhdpi_landscape","size":"1280x720"},
   {"name":"android_xxhdpi_portrait","size":"1080x1440"},
-  {"name":"android_xxhdpi_landscape","size":"1440x1080"}
+  {"name":"android_xxhdpi_landscape","size":"1440x1080"},
+  {"name":"android_featured","size":"1024x500"}
  ]
 
 function getSize(image) {
@@ -122,6 +135,6 @@ splashes.forEach(function(splash) {
   if (splash.name.indexOf('android') == 0) {
     crop('resources/splash-android.png', 'resources/splashes/', splash);
   } else {
-    crop('resources/splash-ios.png', 'resources/splashes/', splash);
+    crop('resources/splash-ios.jpg', 'resources/splashes/', splash);
   }
 });

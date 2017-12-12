@@ -60,6 +60,7 @@ for more details.
 
 ```
 App.icons({
+  "app_store": "resources/icons/app_store.png", // 1024x1024
   "iphone_2x": "resources/icons/iphone_2x.png", // 120x120
   "iphone_3x": "resources/icons/iphone_3x.png", // 180x180
   "ipad": "resources/icons/ipad.png", // 76x76
@@ -70,14 +71,25 @@ App.icons({
   "ios_settings_3x": "resources/icons/ios_settings_3x.png", // 87x87
   "ios_spotlight": "resources/icons/ios_spotlight.png", // 40x40
   "ios_spotlight_2x": "resources/icons/ios_spotlight_2x.png", // 80x80
+  "ios_notification": "resources/icons/ios_notification.png", // 20x20
+  "ios_notification_2x": "resources/icons/ios_notification_2x.png", // 40x40
+  "ios_notification_3x":"resources/icons/ios_notification_3x.png", // 60x60
+  "iphone_legacy": "resources/icons/iphone_legacy.png", // 57x57
+  "iphone_legacy_2x": "resources/icons/iphone_legacy_2x.png", // 114x114
+  "ipad_spotlight_legacy": "resources/icons/ipad_spotlight_legacy.png", // 50x50
+  "ipad_spotlight_legacy_2x": "resources/icons/ipad_spotlight_legacy_2x.png", // 100x100
+  "ipad_app_legacy": "resources/icons/ipad_app_legacy.png", // 72x72
+  "ipad_app_legacy_2x": "resources/icons/ipad_app_legacy_2x.png", // 144x144
   "android_mdpi": "resources/icons/android_mdpi.png", // 48x48
   "android_hdpi": "resources/icons/android_hdpi.png", // 72x72
   "android_xhdpi": "resources/icons/android_xhdpi.png", // 96x96
   "android_xxhdpi": "resources/icons/android_xxhdpi.png", // 144x144
-  "android_xxxhdpi": "resources/icons/android_xxxhdpi.png" // 192x192
+  "android_xxxhdpi": "resources/icons/android_xxxhdpi.png", // 192x192
+  "android_store": "resources/icons/android_store.png" // 512x512
 });
 
 App.launchScreens({
+  "iphone": "resources/splashes/iphone.png", // 320x480
   "iphone_2x": "resources/splashes/iphone_2x.png", // 640x490
   "iphone5": "resources/splashes/iphone5.png", // 640x1136
   "iphone6": "resources/splashes/iphone6.png", // 750x1334
@@ -94,7 +106,8 @@ App.launchScreens({
   "android_xhdpi_portrait": "resources/splashes/android_xhdpi_portrait.png", // 720x1280
   "android_xhdpi_landscape": "resources/splashes/android_xhdpi_landscape.png", // 1280x720
   "android_xxhdpi_portrait": "resources/splashes/android_xxhdpi_portrait.png", // 1080x1440
-  "android_xxhdpi_landscape": "resources/splashes/android_xxhdpi_landscape.png" // 1440x1080
+  "android_xxhdpi_landscape": "resources/splashes/android_xxhdpi_landscape.png", // 1440x1080
+  "android_featured": "resources/splashes/android_featured.png" // 1024x500
 })
 ```
 
