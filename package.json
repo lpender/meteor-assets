@@ -3,6 +3,9 @@
   "version": "0.0.3",
   "description": "Generate icon and splash assets for mobile meteor apps.",
   "main": "meteor-assets.js",
+  "bin": {
+    "meteor-assets": "cli.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
