@@ -3,12 +3,12 @@
 ## Setup
 
 - Clone this repository.
-- Open the repository in the command line and run `npm install`
+- Open the repository in the command line and run `npm link`
 
 ```
 git clone https://github.com/lpender/meteor-assets
 cd meteor-assets
-npm install
+npm link
 ```
 
 ## Environmental Dependencies
@@ -19,6 +19,11 @@ This project requires `imagemagick`.
 
 ```
 sudo apt-get install imagemagick imagemagick-doc
+```
+
+For arch-based distros:
+```
+sudo pacman -S imagemagick
 ```
 
 #### Os X
@@ -46,17 +51,11 @@ git checkout v0.0.2
 some cases. See [this issue](https://github.com/lpender/meteor-assets/issues/6)
 for more details.
 
-1. Generate icons at 1024x1024 and place them in `resources/icon-ios.png` and
-   `resources/icon-android.png`.
+1. Run `meteor-assets gen` and inform source files and target directory.
 
-2. Generate splash screens at 2208x2208 and place them in
-   `resources/splash-ios.png` and `resources/splash-android.png`.
+2. Use the `-f` flag to use the same source file for all images.
 
-3. Run `node meteor-assets`.
-
-4. Copy the `resources` directory to your app: `cp -R resources /path/to/my/app`.
-
-5. Add this to your `mobile-config.js`
+5. Add this to your `mobile-config.js` (replace "/resource/icons/" or "/resources/splash/" with your selected directory).
 
 ``` javascript
 App.icons({
@@ -117,7 +116,3 @@ Sizes thanks to https://github.com/meteor/meteor/blob/release-1.3/tools/cordova/
 
 - This will crop splashes horizontally centered and vertically centered.
 - This does not currently generate [9 patch](https://developer.android.com/guide/topics/graphics/2d-graphics.html#nine-patch) images for Android.
-
-## Contributing
-
-It wouldn't be so bad to turn this into a proper CLI node package.
