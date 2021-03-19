@@ -135,6 +135,6 @@ splashes.forEach(function(splash) {
   if (splash.name.indexOf('android') == 0) {
     crop('resources/splash-android.png', 'resources/splashes/', splash);
   } else {
-    crop('resources/splash-ios.jpg', 'resources/splashes/', splash);
+    crop('resources/splash-ios.png', 'resources/splashes/', splash);
   }
 });
