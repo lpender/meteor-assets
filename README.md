@@ -55,7 +55,7 @@ for more details.
 
 2. Use the `-f` flag to use the same source file for all images.
 
-5. Add this to your `mobile-config.js` (replace "/resource/icons/" or "/resources/splash/" with your selected directory).
+3. Add this to your `mobile-config.js` (replace "/resource/icons/" or "/resources/splash/" with your selected directory).
 
 ``` javascript
 App.icons({
