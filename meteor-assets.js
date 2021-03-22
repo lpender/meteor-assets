@@ -1,5 +1,5 @@
-var fs = require("fs"),
-  gm = require("gm").subClass({ imageMagick: true });
+const fs = require("fs");
+const gm = require("gm").subClass({imageMagick: true});
 
 var icons = [
   { name: "app_store", size: "1024x1024" },
@@ -116,28 +116,32 @@ function crop(source, target, image) {
     });
 }
 
-// Run the code
-
-if (!fs.existsSync(__dirname + "/resources/icons")) {
-  fs.mkdirSync(__dirname + "/resources/icons");
-}
-
-if (!fs.existsSync(__dirname + "/resources/splashes")) {
-  fs.mkdirSync(__dirname + "/resources/splashes");
-}
-
-icons.forEach(function(icon) {
-  if (icon.name.indexOf("android") == 0) {
-    resize("resources/icon-android.png", "resources/icons/", icon);
-  } else {
-    resize("resources/icon-ios.png", "resources/icons/", icon);
+module.exports.run = ({sourceFile, sourceAndroidIcon, sourceIosIcon, sourceAndroidSplash, sourceIosSplash, dir}) => {
+  if(!fs.existsSync(dir + '/resources/icons')) {
+    fs.mkdirSync(dir + '/resources/icons', {recursive: true});
   }
-});
 
-splashes.forEach(function(splash) {
-  if (splash.name.indexOf("android") == 0) {
-    crop("resources/splash-android.png", "resources/splashes/", splash);
-  } else {
-    crop("resources/splash-ios.png", "resources/splashes/", splash);
+  if(!fs.existsSync(dir + '/resources/splashes')) {
+    fs.mkdirSync(dir + '/resources/splashes', {recursive: true});
   }
-});
+
+  if (sourceFile) {
+    sourceAndroidIcon = sourceAndroidSplash = sourceIosIcon = sourceIosSplash = sourceFile;
+  }
+
+  icons.forEach(function(icon) {
+    if (icon.name.indexOf('android') === 0) {
+      resize(sourceAndroidIcon, dir + '/resources/icons/', icon);
+    } else {
+      resize(sourceIosIcon, dir + '/resources/icons/', icon);
+    }
+  });
+
+  splashes.forEach(function(splash) {
+    if (splash.name.indexOf('android') === 0) {
+      crop(sourceAndroidSplash,dir + '/resources/splashes/', splash);
+    } else {
+      crop(sourceIosSplash, dir + '/resources/splashes/', splash);
+    }
+  });
+}
